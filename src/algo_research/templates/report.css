@@ -1,0 +1,28 @@
+.atr-note { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; font-size: .84rem; color: var(--muted); margin: 0 0 14px; }
+.atr-note code { font-family: var(--shell-mono); color: var(--text); }
+.atr-toggle { font-size: .8rem; color: var(--muted); margin-bottom: 14px; }
+.atr-panel { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
+.atr-panel h3 { margin: 0 0 10px; font-size: 1.05rem; }
+.atr-panel h4 { margin: 0 0 6px; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.atr-params { font-family: var(--shell-mono); font-size: .76rem; color: var(--muted); font-weight: 400; margin-left: 8px; }
+.atr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .atr-grid { grid-template-columns: minmax(0, 1fr); } }
+.atr-chart { width: 100%; height: auto; display: block; }
+.atr-axis { fill: none; stroke: var(--border); }
+.atr-line { fill: none; stroke-width: 1.6; }
+.atr-line--is { stroke: var(--accent); }
+.atr-line--nocost { stroke: var(--muted); stroke-dasharray: 4 3; }
+.atr-line--oos { stroke: var(--ok); }
+.atr-line.is-hidden { display: none; }
+.atr-tick { fill: var(--muted); font-size: 10px; }
+.atr-table { width: 100%; border-collapse: collapse; font-size: .8rem; font-variant-numeric: tabular-nums; margin-top: 8px; }
+.atr-table td, .atr-table th { padding: 5px 6px; border-bottom: 1px solid var(--border); text-align: left; }
+.atr-table td:last-child { text-align: right; font-weight: 600; }
+.atr-table th { font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.atr-defl { margin-top: 12px; padding: 10px 12px; border-radius: var(--radius-sm); border-left: 3px solid var(--tone); background: var(--panel-2); font-size: .82rem; }
+.atr-defl[data-verdict='ok'] { --tone: var(--ok); } .atr-defl[data-verdict='warn'] { --tone: var(--warn); } .atr-defl[data-verdict='danger'] { --tone: var(--danger); }
+.atr-defl__why { color: var(--muted); margin-top: 4px; }
+.atr-folds { margin-top: 10px; font-size: .8rem; }
+.atr-folds summary { cursor: pointer; color: var(--accent); }
+.atr-method { font-size: .82rem; color: var(--muted); padding-left: 18px; margin: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
