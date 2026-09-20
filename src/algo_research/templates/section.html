@@ -1,0 +1,22 @@
+<section class="atr-panel" id="s-$name" aria-labelledby="h-$name">
+  <h3 id="h-$name">$title <span class="atr-params">$params</span></h3>
+  <div class="atr-grid">
+    <div>
+      <h4>In-sample, best of $grid_size parameter sets</h4>
+      $chart_is
+      <table class="atr-table"><tbody>$rows_is</tbody></table>
+    </div>
+    <div>
+      <h4>Walk-forward, $n_folds folds &mdash; the honest record</h4>
+      $chart_oos
+      <table class="atr-table"><tbody>$rows_oos</tbody></table>
+    </div>
+  </div>
+  <div class="atr-defl" data-verdict="$verdict_tone">
+    <strong>Deflated Sharpe ratio $dsr</strong> against an expected best-of-$n_trials Sharpe of $sr_star (annualised) &middot; PSR vs zero $psr &middot; minimum track record for 95% confidence: $min_track
+    <div class="atr-defl__why">$verdict</div>
+  </div>
+  <details class="atr-folds"><summary>Fold table</summary>
+    <table class="atr-table"><thead>$fold_head</thead><tbody>$fold_rows</tbody></table>
+  </details>
+</section>
