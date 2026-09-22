@@ -6,8 +6,14 @@ CSV you upload (date, close). Nothing here is a forecast or a recommendation.
 
 from __future__ import annotations
 
+# Community Cloud runs this file from a plain checkout; make the src/ package importable there.
+import sys
+from pathlib import Path
+
 import numpy as np
 import streamlit as st
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from algo_research.backtest import Costs, compute_metrics, run_backtest
 from algo_research.data import load_csv, synthetic_series
