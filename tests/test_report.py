@@ -28,6 +28,7 @@ def test_write_report_creates_site(tmp_path: Path) -> None:
     for name in (
         "src/exec-shell.css",
         "src/exec-shell.js",
+        "src/tour-place.js",
         "src/report.js",
         "src/report.css",
         "report.json",
